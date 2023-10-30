@@ -12,15 +12,22 @@ public class Livro {
     private String generoDoLivro;
     private int numeroDePaginas;
 
-        public Livro(String nomeDoLivro,String nome, String genero, int numeroDePaginas) throws PaginasInvalidasException {
+    public Livro(String nomeDoLivro,String nomeAutor, String genero, int numeroDePaginas) throws PaginasInvalidasException {
         this.nomeDoLivro = nomeDoLivro;
-        this.nomeDoAutor = nome;
+        this.nomeDoAutor = nomeAutor;
         this.generoDoLivro = genero;
         if (numeroDePaginas >= 1) {
             this.numeroDePaginas = numeroDePaginas;
         } else {
             throw new PaginasInvalidasException("O número de páginas deve ser maior ou igual a 1");
         }
+    }
+
+    public Livro(String nomeDoLivro, String nomeAutor,String genero) {
+        this.nomeDoLivro = nomeDoLivro;
+        this.nomeDoAutor = nomeAutor;
+        this.generoDoLivro = genero;
+        this.numeroDePaginas = 0;
     }
 
     public Livro() throws PaginasInvalidasException {
