@@ -1,10 +1,5 @@
 import java.util.Objects;
-
-class PaginasInvalidasException extends Exception {
-    public PaginasInvalidasException(String mensagem) {
-        super(mensagem);
-    }
-}
+import Exceptions.PaginasInvalidasException;
 
 public class Livro {
     private String nomeDoLivro;
