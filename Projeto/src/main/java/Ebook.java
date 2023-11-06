@@ -1,8 +1,5 @@
-class FormatoIndefinidoException extends Exception {
-    public FormatoIndefinidoException (String mensagem) {
-        super(mensagem);
-    }
-}
+import Exceptions.FormatoIndefinidoException;
+import Exceptions.PaginasInvalidasException;
 
 public class Ebook extends Livro {
     private String formato;
