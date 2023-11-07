@@ -20,10 +20,10 @@ public class SistemaBiblioteca {
         }
 
         while(ligado) {
-            int menu = Integer.parseInt(JOptionPane.showInputDialog(null,"Bem vindo ao menu, selecione a opção que deseja: " +
-                    "\n1. Cadastrar novo Livro." +
-                    "\n2. Pesquisar Livros pelo autor." +
-                    "\n3. Pesquisar Livros pelo genero." +
+            int menu = Integer.parseInt(JOptionPane.showInputDialog(null,"Bem Vindo ao Menu, Selecione a Opção que Deseja: " +
+                    "\n1. Cadastrar Novo Livro." +
+                    "\n2. Pesquisar Livros Pelo Autor." +
+                    "\n3. Pesquisar Livros Pelo Gênero." +
                     "\n4. Apagar Livro." +
                     "\n5. Salvar Dados." +
                     "\n6. Sair."));
@@ -60,7 +60,7 @@ public class SistemaBiblioteca {
                     if (ebookOrNot == 2) {
                         String nomeDoLivro = JOptionPane.showInputDialog(null,"Qual o nome do Livro?");
                         String autorDoLivro = JOptionPane.showInputDialog(null,"Qual o nome do Autor?");
-                        String generoDoLivro = JOptionPane.showInputDialog(null,"Qual o gênero?");
+                        String generoDoLivro = JOptionPane.showInputDialog(null,"Qual o Gênero?");
                         int quantidadeDePaginas = Integer.parseInt(JOptionPane.showInputDialog(null,"Qual a quantidade de páginas?"));
                         try {
                             Livro livro = new Livro(nomeDoLivro,autorDoLivro,generoDoLivro,quantidadeDePaginas);
